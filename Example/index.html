@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style>
+    .grid div {
+  grid-column: var(--c);
+  grid-row: var(--r);
+}
+</style>  
+
+</head>
+
+  <body class="font-['Poppins'] font-regular">
+   <div class="w-full bg-zinc-900">
+    
+    <div class="grid grid-cols-8 gap-2 overflow-hidden">
+
+        <div class="elem col-span-1 row-span-1" style="--r: 1; --c: 2; width: 180px; height: 180px;"><img src="https://picsum.photos/180?random=1" image-cover alt="Image 1"></div>
+        <div class="elem col-span-1 row-span-1" style="--r: 1; --c: 6; width: 180px; height: 180px;"><img src="https://picsum.photos/180?random=2" alt="Image 2"></div>
+        <div class="elem col-span-1 row-span-1" style="--r: 2; --c: 1; width: 180px; height: 180px;"><img src="https://picsum.photos/180?random=3" alt="Image 3"></div>
+        <div class="elem col-span-1 row-span-1" style="--r: 2; --c: 5; width: 180px; height: 180px;"><img src="https://picsum.photos/180?random=4" alt="Image 4"></div>
+        <div class="elem col-span-1 row-span-1" style="--r: 3; --c: 3; width: 180px; height: 180px;"><img src="https://picsum.photos/180?random=5" alt="Image 5"></div>
+        <div class="elem col-span-1 row-span-1" style="--r: 3; --c: 7; width: 180px; height: 180px;"><img src="https://picsum.photos/180?random=6" alt="Image 6"></div>
+        <div class="elem col-span-1 row-span-1" style="--r: 4; --c: 2; width: 180px; height: 180px;"><img src="https://picsum.photos/180?random=7" alt="Image 7"></div>
+        <div class="elem col-span-1 row-span-1" style="--r: 4; --c: 8; width: 180px; height: 180px;"><img src="https://picsum.photos/180?random=8" alt="Image 8"></div>
+        <div class="elem col-span-1 row-span-1" style="--r: 5; --c: 4; width: 180px; height: 180px;"><img src="https://picsum.photos/180?random=9" alt="Image 9"></div>
+        <div class="elem col-span-1 row-span-1" style="--r: 5; --c: 6; width: 180px; height: 180px;"><img src="https://picsum.photos/180?random=10" alt="Image 10"></div>
+        <div class="elem col-span-1 row-span-1" style="--r: 6; --c: 1; width: 180px; height: 180px;"><img src="https://picsum.photos/180?random=11" alt="Image 11"></div>
+        <div class="elem col-span-1 row-span-1" style="--r: 6; --c: 7; width: 180px; height: 180px;"><img src="https://picsum.photos/180?random=12" alt="Image 12"></div>
+        <div class="elem col-span-1 row-span-1" style="--r: 7; --c: 3; width: 180px; height: 180px;"><img src="https://picsum.photos/180?random=13" alt="Image 13"></div>
+        <div class="elem col-span-1 row-span-1" style="--r: 7; --c: 5; width: 180px; height: 180px;"><img src="https://picsum.photos/180?random=14" alt="Image 14"></div>
+        <div class="elem col-span-1 row-span-1" style="--r: 8; --c: 2; width: 180px; height: 180px;"><img src="https://picsum.photos/180?random=15" alt="Image 15"></div>
+        <div class="elem col-span-1 row-span-1" style="--r: 8; --c: 6; width: 180px; height: 180px;"><img src="https://picsum.photos/180?random=16" alt="Image 16"></div>
+        <div class="elem col-span-1 row-span-1" style="--r: 9; --c: 1; width: 180px; height: 180px;"><img src="https://picsum.photos/180?random=17" alt="Image 17"></div>
+        <div class="elem col-span-1 row-span-1" style="--r: 9; --c: 4; width: 180px; height: 180px;"><img src="https://picsum.photos/180?random=18" alt="Image 18"></div>
+        <div class="elem col-span-1 row-span-1" style="--r: 10; --c: 3; width: 180px; height: 180px;"><img src="https://picsum.photos/180?random=19" alt="Image 19"></div>
+        <div class="elem col-span-1 row-span-1" style="--r: 10; --c: 7; width: 180px; height: 180px;"><img src="https://picsum.photos/180?random=20" alt="Image 20"></div>
+
+    </div>  
+      
+      <div class="fixed top-0 bottom-0 w-full flex justify-center items-center  text-white text-4xl font-bold">
+        Big Title
+      </div>
+      <div class="w-full py-70 relative z-[999] flex  align-center justify-center text-center text-orange bg-[#D1D1D1] text-justify ">
+        <p class="w-3/4 text-3xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, provident sint omnis officia veritatis nisi reiciendis ut exercitationem ipsam, doloremque cum repellat molestiae aliquam accusantium, repudiandae nam eaque voluptas cupiditate? iquid velit corporis distinctio adipisci! Fugiat beatae voluptatibus vitae, magnam officiis expedita ab dolore quo, sit deleniti voluptates dignissimos accusamus. Ratione, atque ipsum.</p>
+      </div>
+   </div>
+    <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js" integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js"></script> 
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
