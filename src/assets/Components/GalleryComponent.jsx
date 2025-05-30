@@ -132,29 +132,8 @@ const GalleryComponent = () => {
         <p className="w-3/4 text-3xl text-black font-second">
         In today’s digital world, your online presence is more powerful than ever. Whether you're a brand, creator, or entrepreneur, connecting with the right audience can open doors to endless opportunities. If you're ready to elevate your social presence, collaborate on impactful content, or just explore fresh ideas together — let’s connect and create something meaningful. Growth starts with the right partnerships.
   </p>
-  {/* <p>let's connect</p> */}
-  {/* <form
-  action="https://formspree.io/f/mzzgpgrd"
-  method="POST"
-  className="flex flex-wrap items-center gap-4 mt-8 w-2/4 py-16"
->
-  <input
-  type="text"
-  name="text"
-  placeholder="Your email or number."
-  required
-  pattern="^(\+?\d{10,15}|[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$"
-  title="Please enter email address or phone number."
-  className="placeholder-font-second px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-zinc-400 text-black flex-1"
-/>
-
-  <button
-    className="bg-black hover:bg-secondary text-secondary hover:text-black font-bold py-2 px-6 rounded transition-colors duration-200"
-    type="submit"
-  >
-    Submit
-  </button>
-</form> */}
+  
+  
 
 <form
   onSubmit={(e) => {
@@ -175,10 +154,10 @@ const GalleryComponent = () => {
     name="text"
     placeholder="Your email or number."
     required
-    className="placeholder-font-second px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-zinc-400 text-black flex-1"
+    className="placeholder:font-second px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-zinc-400 text-black flex-1"
   />
   <button
-    className="bg-black hover:bg-secondary text-secondary hover:text-black font-bold py-2 px-6 rounded transition-colors duration-200"
+    className="bg-black border font-main font-light  border-black hover:bg-secondary text-secondary hover:text-black font-bold py-2 px-6 rounded transition-colors duration-200"
     type="submit"
   >
     Submit
