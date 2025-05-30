@@ -78,6 +78,9 @@ const GalleryComponent = () => {
     });
   });
 
+  
+  
+
   return (
     <section id="works">
       <style>
@@ -96,42 +99,95 @@ const GalleryComponent = () => {
             const row = Math.floor(i / 2) + 1;
             return (
               <div
-                key={i}
-                className="elem col-span-1 row-span-1 "
-                style={{
-                  "--r": row,
-                  "--c": col,
-                  width: "180px",
-                  height: "180px",
-                }}
+              key={i}
+              className="elem col-span-1 row-span-1 "
+              style={{
+                "--r": row,
+                "--c": col,
+                width: "180px",
+                height: "180px",
+              }}
               >
-                <img src={link} alt={`Image ${i + 1}`} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+              <img src={link} alt={`Image ${i + 1}`} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
               </div>
             );
-          })}
-        </div>
+            })}
+          </div>
 
-        <div
-          ref={fixedTextRef}
-          className="fixed top-0 bottom-0 w-full flex justify-center items-center text-white text-4xl font-bold pointer-events-none"
-          style={{ opacity: 0 }}
-        >
-          Our Works
-        </div>
+          <div
+            ref={fixedTextRef}
+            className="fixed top-0 bottom-0 w-full flex justify-center items-center text-white text-4xl font-bold pointer-events-none"
+            style={{ opacity: 0 }}
+          >
+            Our Works
+          </div>
 
-      <div className="w-full h-screen py-70 relative z-[999] flex flex-col justify-center items-center text-orange bg-[#D1D1D1]">
-  <h1 className="text-4xl font-bold mb-8 opacity-0 font-main" id="our-works-title">
-    Our Works
-  </h1>
-  <h1 className="w-3/4 text-6xl font-bold py-8 text-black font-second">
-    Looking to grow your social presence and explore more opportunities?
-  </h1>
-  <p className="w-3/4 text-3xl text-black font-second">
-    In today’s digital world, your online presence is more powerful than ever. Whether you're a brand, creator, or entrepreneur, connecting with the right audience can open doors to endless opportunities. If you're ready to elevate your social presence, collaborate on impactful content, or just explore fresh ideas together — let’s connect and create something meaningful. Growth starts with the right partnerships.
+          <div className="w-full h-screen py-70 relative z-[999] flex flex-col justify-center items-center text-orange bg-[#D1D1D1]">
+        <h1 className="text-4xl font-bold mb-8 opacity-0 font-main" id="our-works-title">
+        Our Works
+        </h1>
+        <h1 className="w-3/4 text-6xl font-bold py-8 text-black font-second">
+        Looking to grow your social presence and explore more opportunities?
+        </h1>
+        <p className="w-3/4 text-3xl text-black font-second">
+        In today’s digital world, your online presence is more powerful than ever. Whether you're a brand, creator, or entrepreneur, connecting with the right audience can open doors to endless opportunities. If you're ready to elevate your social presence, collaborate on impactful content, or just explore fresh ideas together — let’s connect and create something meaningful. Growth starts with the right partnerships.
   </p>
+  {/* <p>let's connect</p> */}
+  {/* <form
+  action="https://formspree.io/f/mzzgpgrd"
+  method="POST"
+  className="flex flex-wrap items-center gap-4 mt-8 w-2/4 py-16"
+>
+  <input
+  type="text"
+  name="text"
+  placeholder="Your email or number."
+  required
+  pattern="^(\+?\d{10,15}|[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$"
+  title="Please enter email address or phone number."
+  className="placeholder-font-second px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-zinc-400 text-black flex-1"
+/>
+
+  <button
+    className="bg-black hover:bg-secondary text-secondary hover:text-black font-bold py-2 px-6 rounded transition-colors duration-200"
+    type="submit"
+  >
+    Submit
+  </button>
+</form> */}
+
+<form
+  onSubmit={(e) => {
+    const input = e.target.elements.text.value.trim();
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const phonePattern = /^\+?\d{10}$/;
+    if (!emailPattern.test(input) && !phonePattern.test(input)) {
+      e.preventDefault();
+      alert("Please enter a valid email address or phone number.");
+    }
+  }}
+  action="https://formspree.io/f/mzzgpgrd"
+  method="POST"
+  className="flex flex-wrap items-center gap-4 mt-8 w-2/4 py-16"
+>
+  <input
+    type="text"
+    name="text"
+    placeholder="Your email or number."
+    required
+    className="placeholder-font-second px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-zinc-400 text-black flex-1"
+  />
+  <button
+    className="bg-black hover:bg-secondary text-secondary hover:text-black font-bold py-2 px-6 rounded transition-colors duration-200"
+    type="submit"
+  >
+    Submit
+  </button>
+</form>
+
 
   {/* Bottom left text */}
-  <p className="absolute bottom-4 left-4 px-44 -7 text-black text-sm">
+  <p className="absolute bottom-4 left-4 px-44 -7  text-black text-sm">
     Konst Studio &copy;
   </p>
   <p className="absolute bottom-4 right-4 px-44 -7 text-black text-sm">
@@ -170,7 +226,7 @@ const GalleryComponent = () => {
 </svg>
     </a>
     <a
-      href="https://www.whatsapp.com/"
+      href="https://wa.me/8080030349"
       target="_blank"
       rel="noopener noreferrer"
       className="transition-colors duration-200 text-gray-500 hover:text-green-500"
