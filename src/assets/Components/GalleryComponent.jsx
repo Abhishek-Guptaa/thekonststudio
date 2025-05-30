@@ -135,7 +135,7 @@ const GalleryComponent = () => {
   
   
 
-<form
+<form id="contact"
   onSubmit={(e) => {
     const input = e.target.elements.text.value.trim();
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
