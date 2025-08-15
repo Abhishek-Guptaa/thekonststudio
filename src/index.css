@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+@font-face {
+  font-family: "FontSpring";
+  src: url("../src/assets/fonts/Fontspring/fontspring-demo-ceraroundpro-light.otf")
+    format("opentype");
+  font-weight: 200;
+  font-style: light;
+}
+@font-face {
+  font-family: "FontSpring";
+  src: url("../src/assets/fonts/Fontspring/fontspring-demo-ceraroundpro-regular.otf")
+    format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FontSpring";
+  src: url("../src/assets/fonts/Fontspring/fontspring-demo-ceraroundpro-bold.otf")
+    format("opentype");
+  font-weight: 600;
+  font-style: bold;
+}
+@font-face {
+  font-family: "FontSpring";
+  src: url("../src/assets/fonts/Fontspring/fontspring-demo-ceraroundpro-black.otf")
+    format("opentype");
+  font-weight: 800;
+  font-style: black;
+}
+
+@font-face {
+  font-family: "NeueMachina";
+  src: url("/src/assets/fonts/Neue Machina - Free for Personal Use/NeueMachina-Regular.otf")
+    format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+@font-face {
+  font-family: "NeueMachina";
+  src: url("/src/assets/fonts/Neue Machina - Free for Personal Use/NeueMachina-Ultrabold.otf")
+    format("opentype");
+  font-weight: 800;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "PPMori";
+  src: url("../src/assets/fonts/PPmori/PPMori-Extralight.otf") format("opentype");
+  font-weight: 200; /* Extralight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PPMori";
+  src: url("../src/assets/fonts/PPmori/PPMori-ExtralightItalic.otf") format("opentype");
+  font-weight: 400; /* Extralight Italic */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PPMori";
+  src: url("../src/assets/fonts/PPmori/PPMori-Regular.otf") format("opentype");
+  font-weight: 500; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PPMori";
+  src: url("../src/assets/fonts/PPmori/PPMori-RegularItalic.otf") format("opentype");
+  font-weight: 600; /* Regular Italic */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PPMori";
+  src: url("../src/assets/fonts/PPmori/PPMori-SemiBold.otf") format("opentype");
+  font-weight: 700; /* SemiBold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PPMori";
+  src: url("../src/assets/fonts/PPmori/PPMori-SemiBoldItalic.otf") format("opentype");
+  font-weight: 800; /* SemiBold Italic */
+  font-style: italic;
+}
+
+body {
+  color: white;
+  /* background: 
+      radial-gradient(circle at top right, rgba(10, 60, 42, 0.934) 0%, transparent 30%), 
+      radial-gradient(circle at center left, rgba(9, 66, 45, 0.9) 0%, transparent 25%), 
+    
+      black; */
+  height: 100vh;
+  margin: 0;
+}
+
+.hero{
+  background: 
+  radial-gradient(circle at top right, rgba(10, 60, 42, 0.934) 0%, transparent 30%), 
+  radial-gradient(circle at center left, rgba(9, 66, 45, 0.9) 0%, transparent 25%), 
+
+  black;
+}
+
+.hero2{
+  background: 
+ 
+  radial-gradient(circle at 60%  30% , rgba(9, 66, 45, 0.5) 0%, transparent 30%), 
+
+  black;
+}
+.display-underline {
+  position: relative;
+  display: inline-block; /* Ensures it wraps text properly */
+}
+
+.display-underline::after {
+  content: "";  /* Required for pseudo-elements */
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjusts underline position */
+  width: 0; /* Start with no underline */
+  height: 2px;
+  background-color: currentColor; /* Matches text color */
+  transition: width 0.3s ease-in-out; /* Smooth animation */
+}
+
+.display-underline:hover::after {
+  width: 100%; /* Expands underline on hover */
+}
+
+
